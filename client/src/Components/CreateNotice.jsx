@@ -10,7 +10,7 @@ const CreateNotice = () => {
   }, []);
   const getData = () => {
     axios
-      .get("http://localhost:8080/data")
+      .get("https://crimecheckbackendassign-eiy1.vercel.app/data")
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -28,7 +28,7 @@ console.log(username1.inputValue)
       username: username1.inputValue,
       post: post,
     };
-    axios.post("http://localhost:8080/createpost", payload);
+    axios.post("https://crimecheckbackendassign-eiy1.vercel.app/createpost", payload);
     getData();
    alert("Succesfully add notice data")
     // setPost("");

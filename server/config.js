@@ -5,6 +5,6 @@ const connectionparams={
     useUnifiedTopology:true
 }
 
-const connection = mongoose.connect('mongodb://127.0.0.1:27017/noticedata',connectionparams);
+const connection = mongoose.connect('mongodb+srv://crimecheck:crimecheck@cluster0.yhlcmsg.mongodb.net/?retryWrites=true&w=majority',connectionparams);
 
 module.exports=connection;

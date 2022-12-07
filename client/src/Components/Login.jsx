@@ -11,7 +11,7 @@ const Login = () => {
     }
    function onChangeAlphaNumericInput(e){
       const value = e.target.value;
-      const regex = /^[0-9a-zA-Z(\-)]+$/; //this will admit letters, numbers and dashes
+      const regex = /^[0-9a-zA-Z(\-)]+$/; 
       if (value.match(regex) || value === "") {
         setUsername({ inputValue: value });
         console.log()
