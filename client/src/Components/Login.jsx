@@ -16,7 +16,6 @@ const Login = () => {
         setUsername({ inputValue: value });
         console.log()
       }
-
     }
   return (
     <div id="login">
